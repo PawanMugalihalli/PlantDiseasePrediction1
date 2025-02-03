@@ -1,24 +1,52 @@
-Plant Disease Prediction using ResNet-18 model
+# Plant Disease Prediction using ResNet-18 Model
 
-Description about this project:
+## Project Description
 
-  This project trains a machine learning model to classify plant diseases based on images of plant leaves. It uses a labeled dataset of plant images, where each image is categorized by disease type. The model is trained to learn patterns in these images that are specific to each disease.
-  *** The dataset contains 10 classes including diseased and healthy leaves of Tomato crop***
-  Input (Plant Images): The project uses these labeled images to train the ResNet-18 model to recognize specific features associated with different diseases.
-  Output (Trained Model and Metrics): The trained model can then be used to predict the disease in new, unlabeled plant images. The model’s accuracy, precision, recall, F1-score, and confusion matrix provide insights into its performance, showing how well it distinguishes between different diseases.
-  In essence, the project builds a classifier that can help identify plant diseases from new images, potentially assisting farmers or agricultural experts in diagnosing plant health issues.
+This project aims to build a machine learning model that classifies plant diseases based on images of plant leaves using a ResNet-18 model. The model is trained on a labeled dataset containing images of plant leaves, categorized by disease type. The model learns distinctive patterns from these images to accurately classify diseases and assist in plant health diagnosis.
 
-Steps to execute the program: Method 1
+### Key Features:
+- **Dataset**: The dataset consists of images from 10 categories, including both diseased and healthy leaves of the Tomato crop.
+- **Input**: The model takes in labeled plant images to train a ResNet-18 model.
+- **Output**: After training, the model can predict the disease in new, unseen images. The performance is evaluated using metrics such as accuracy, precision, recall, F1-score, and a confusion matrix.
 
-  Open this link for the kaggle 'dataset': https://www.kaggle.com/datasets/pawanmugalihalli/plantvillagedataset2
-  It will take you to Kaggle dateset 'plantvillagedataset2'.
-  Click on 'New Notebook', it will create a kaggle notebook.
-  Go to settings -> Go to Accelerator -> Select any one of the GPUs (if available).
-  Copy the python file from vpl and past it here in one cell.
-  Run it.
-  
-  Alternate method
-  
-  Link for the kaggle 'notebook' of my project (Made it public): https://www.kaggle.com/code/pawanmugalihalli/resnet50-2
-  1.You can open my kaggle notebook from this link and click on edit.
-  2.Run each cell.
+The project aims to develop a classifier that helps identify plant diseases, offering potential assistance to farmers and agricultural experts in diagnosing plant health problems.
+
+## Dataset
+
+The dataset used for this project is sourced from Kaggle, which contains images of tomato leaves labeled with various disease types, as well as healthy leaves.
+
+- [PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/pawanmugalihalli/plantvillagedataset2)
+
+## Steps to Execute the Program
+
+### Method 1: Using Kaggle Notebook
+
+1. Visit the [PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/pawanmugalihalli/plantvillagedataset2).
+2. Click on **New Notebook** to create a new Kaggle notebook.
+3. Navigate to **Settings** -> **Go to Accelerator** and select one of the available GPUs (if available).
+4. Copy the Python script from the provided link (in your VPL or repository) and paste it into a new cell in the Kaggle notebook.
+5. Run the notebook to start training the model.
+
+### Method 2: Using Kaggle Notebook Link
+
+Alternatively, you can use the Kaggle notebook made public for this project:
+
+1. Open the [Kaggle Notebook for this project](https://www.kaggle.com/code/pawanmugalihalli/resnet50-2).
+2. Click **Edit** to open the notebook in edit mode.
+3. Run each cell sequentially to train the model and evaluate its performance.
+
+## Dependencies
+
+Ensure you have the following Python packages installed:
+
+- `torch` (PyTorch)
+- `torchvision`
+- `matplotlib`
+- `numpy`
+- `pandas`
+- `scikit-learn`
+- `opencv-python`
+
+You can install them using pip:
+```bash
+pip install torch torchvision matplotlib numpy pandas scikit-learn opencv-python
